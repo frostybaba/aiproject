@@ -1,0 +1,94 @@
+/* public/styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #282c34, #1f222a); /* Subtle gradient background */
+    color: #e0e0e0; /* Light gray text */
+    font-family: 'Open Sans', sans-serif; /* Modern sans-serif font */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 800px;
+    height: 90vh;
+    background-color: #21252b; /* Dark gray background */
+    border: 2px solid #585858; /* Subtle gray border */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+.bold-red {
+    font-weight: bold;
+    color: #e0e0e0; /* Light gray text */
+}
+
+a {
+    color: #e0e0e0; /* Light gray text */
+    text-decoration: underline; /* Bağlantı altı çizili */
+}
+
+a:hover {
+    color: #fff; /* White text on hover */
+}
+.output {
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: 'Fira Code', monospace; /* Monospace font for terminal output */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 10px;
+    color: #e0e0e0; /* Light gray text */
+}
+
+input {
+    flex-grow: 1;
+    background-color: #31363d; /* Slightly darker gray background */
+    border: none;
+    color: #e0e0e0; /* Light gray text */
+    font-family: 'Fira Code', monospace; /* Monospace font for input */
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px;
+}
+
+/* Customize the cursor */
+body {
+  cursor: url('https://www.cursorworld.com/static/img/cursors/animated-cursors/a_cursor_1.cur'), auto;
+}
+
+input:focus {
+  background-color: #3a4148; /* Slightly darker on focus */
+  box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); /* Blue focus shadow */
+}
+
+/* Placeholder for the input field */
+input::placeholder {
+    color: #a0a0a0; /* Light gray placeholder */
+}
+
+/* Additional Styling for Modern Feel */
+.output {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input-container {
+  padding: 10px;
+}
